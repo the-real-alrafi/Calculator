@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0a0a0a 0% , #333333 50%, #4d4d4d 100%); /* Gradient background */
+}
+
+.calculator {
+  width: 320px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+}
+
+.calculator-screen {
+  width: 100%;
+  height: 60px; 
+  background-color: #222;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: right;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons in each row */
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+/* Buttons with Blue Gradient */
+.key.blue {
+  background: linear-gradient(to bottom right, #1565C0, #42A5F5); /* Blue gradient */
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Buttons with Orange Gradient */
+.key.orange {
+  background: linear-gradient(to bottom right, #FB8C00, #FFA726); /* Orange gradient */
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.key:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.key:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Operator styling (same as orange buttons) */
+.operator {
+  background: linear-gradient(to bottom right, #FB8C00, #FFA726);
+}
+
+/* Logo styling */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+  margin: 0;
+  margin-left: 10px;
+}
+
+.eagle-icon {
+  font-size: 2rem;
+  color: white;
+}
